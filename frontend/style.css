@@ -32,7 +32,7 @@ a {
     overflow: hidden;
 }
 
-#signupButton {
+#signupbutton {
   background-color: #9e4caf;
   color: white;
   padding: 21px 21px;
@@ -45,7 +45,11 @@ a {
   font-weight: bold;
 }
 
-#settings {
+#signupbutton:hover {
+  outline: 2px solid #9e4caf; 
+}
+
+#settingsbutton {
   background-color: #9e4caf;
   color: white;
   padding: 21px 21px;
@@ -58,10 +62,10 @@ a {
   font-weight: bold;
 }
 
-
-#signupButton:hover {
+#settingsbutton:hover {
   outline: 2px solid #9e4caf; 
 }
+
 .flex-flex {
     display: flex;
 }
@@ -156,6 +160,10 @@ input[type="submit"] {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+}
+
+#input:hover {
+  outline: 2px solid #9e4caf; 
 }
 
 
