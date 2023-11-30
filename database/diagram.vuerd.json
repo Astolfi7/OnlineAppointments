@@ -1,0 +1,925 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -175.19999999999965,
+    "scrollLeft": -391.1999999999996,
+    "zoomLevel": 0.8,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "Inżynierka",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Patient",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c18dc90d-1bf7-4c17-8ecc-1caa0e12f727"
+          },
+          {
+            "name": "PatientID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "83c04e15-1b09-492f-b92d-fea43820b018"
+          },
+          {
+            "name": "TreatmentHistory",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.20751953125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "22ab20d7-190a-433d-b326-43f20cefa409"
+          },
+          {
+            "name": "DateOfBirth",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.91357421875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ff0f8c44-5dd8-4580-832d-0648a7030fd4"
+          },
+          {
+            "name": "ContactNum",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.2490234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d7b39d27-0860-402d-b1e3-f5eacedc0489"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 159.6,
+          "top": 23.9552,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "1a03627a-6595-4a9d-947f-0e652fb85637"
+      },
+      {
+        "name": "Appointment",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2208af39-2c23-47e1-91ec-9411c5e80a16"
+          },
+          {
+            "name": "PatientID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "403afa76-b837-43d7-993c-b5444587c903"
+          },
+          {
+            "name": "DoctorID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f4b2697d-1f7b-4c68-8f91-845d53d1549c"
+          },
+          {
+            "name": "AppointmentDateTime",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 130.857421875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fe6b73b5-d873-44e1-83cc-a84a4644d590"
+          },
+          {
+            "name": "Status ",
+            "comment": "",
+            "dataType": "BOOLEAN",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.8544921875,
+              "widthDefault": 60
+            },
+            "id": "a3c3886c-eefa-4a45-a108-cac6a68a3d95"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 148.0001,
+          "top": 235.7555,
+          "zIndex": 1,
+          "widthName": 74.99169921875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "810bc435-5224-4ce7-b235-1539c04fbb27"
+      },
+      {
+        "name": "Person",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cbe7c045-1082-44b8-b8a0-184ecb4ce1d1"
+          },
+          {
+            "name": "Name",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f26b3029-96be-4c52-b82f-af5aa00bd890"
+          },
+          {
+            "name": "Surname",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7ca42a4f-c0e4-49ea-b280-b7e4020b05b7"
+          },
+          {
+            "name": "Gender",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5493a7de-2ffc-458d-97ef-39069489cf45"
+          },
+          {
+            "name": "Age",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "71ae9023-d190-4834-b7bd-41fb03e4c1b0"
+          },
+          {
+            "name": "Contact",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7052ceb0-fac1-42f8-96cc-df2065ace5d7"
+          },
+          {
+            "name": "Adress",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "046027e4-f3ee-4e63-a71e-10a399ff3bff"
+          },
+          {
+            "name": "Email",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "baea338d-5e24-4cc3-895f-53634155e851"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 667,
+          "top": 49.4,
+          "zIndex": 5,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "e4c17f97-9c6e-4ab1-97a5-c75bc9fd4683"
+      },
+      {
+        "name": "Employee",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d680b6db-9dda-4180-9414-6360e53bd77c"
+          },
+          {
+            "name": "FirstName",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.947265625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2c07a1e9-7fba-47f0-ac51-6190c85efebd"
+          },
+          {
+            "name": "LastName",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.2490234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "81ca0926-39da-4113-8368-dacb5991c3e3"
+          },
+          {
+            "name": "Specialty",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1e775d88-af9b-4e9e-b574-2a4573eea664"
+          },
+          {
+            "name": "Availability",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.1787109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "754fddf1-9674-4260-ae06-8de644a27824"
+          },
+          {
+            "name": "Doctor ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3b5a02bb-9eb1-43cd-905d-9078341a60e0"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1120.6,
+          "top": 67.6,
+          "zIndex": 6,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "35469e45-f078-49d0-824f-87574316a442"
+      },
+      {
+        "name": "Doctor Speciality",
+        "comment": "",
+        "columns": [
+          {
+            "name": "SpecialityID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.63720703125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "95187758-0a11-4638-9976-9d4299aae6b0"
+          },
+          {
+            "name": "Doctor ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "292af076-2951-48c2-9647-943473a957df"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1142.8,
+          "top": 361,
+          "zIndex": 2,
+          "widthName": 99.5380859375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "699875fd-25fe-406a-a873-a819693efe49"
+      },
+      {
+        "name": "Speciality",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Name",
+            "comment": "",
+            "dataType": "CHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f72ca3af-8621-4a79-87f4-f1e40fb2423b"
+          },
+          {
+            "name": "SpecialityID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 70.63720703125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b75045c9-6174-4816-bf5c-27270fb3d645"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 670.8,
+          "top": 361.6,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "6e7f087f-a1f4-4207-89a9-82b5b10ca33c"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e4c17f97-9c6e-4ab1-97a5-c75bc9fd4683",
+          "columnIds": [
+            "cbe7c045-1082-44b8-b8a0-184ecb4ce1d1"
+          ],
+          "x": 667,
+          "y": 107.65,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "1a03627a-6595-4a9d-947f-0e652fb85637",
+          "columnIds": [
+            "c18dc90d-1bf7-4c17-8ecc-1caa0e12f727"
+          ],
+          "x": 547.80751953125,
+          "y": 109.7052,
+          "direction": "right"
+        },
+        "constraintName": "fk_person_to_patient",
+        "visible": true,
+        "id": "25fb9b75-ccb3-4f32-ba02-dc21ab10f3a6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e4c17f97-9c6e-4ab1-97a5-c75bc9fd4683",
+          "columnIds": [
+            "cbe7c045-1082-44b8-b8a0-184ecb4ce1d1"
+          ],
+          "x": 667,
+          "y": 224.15,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "810bc435-5224-4ce7-b235-1539c04fbb27",
+          "columnIds": [
+            "2208af39-2c23-47e1-91ec-9411c5e80a16"
+          ],
+          "x": 570.7120140625,
+          "y": 321.5055,
+          "direction": "right"
+        },
+        "constraintName": "fk_person_to_appointment",
+        "visible": true,
+        "id": "aa55501b-9722-436b-8004-34c3fd256a22"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e4c17f97-9c6e-4ab1-97a5-c75bc9fd4683",
+          "columnIds": [
+            "cbe7c045-1082-44b8-b8a0-184ecb4ce1d1"
+          ],
+          "x": 1014,
+          "y": 165.9,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "35469e45-f078-49d0-824f-87574316a442",
+          "columnIds": [
+            "d680b6db-9dda-4180-9414-6360e53bd77c"
+          ],
+          "x": 1120.6,
+          "y": 163.6,
+          "direction": "left"
+        },
+        "constraintName": "fk_person_to_",
+        "visible": true,
+        "id": "324cd9e8-b676-46f9-a42e-7ba7a3dc6ac6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "699875fd-25fe-406a-a873-a819693efe49",
+          "columnIds": [
+            "95187758-0a11-4638-9976-9d4299aae6b0"
+          ],
+          "x": 1142.8,
+          "y": 416,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "6e7f087f-a1f4-4207-89a9-82b5b10ca33c",
+          "columnIds": [
+            "b75045c9-6174-4816-bf5c-27270fb3d645"
+          ],
+          "x": 1028.43720703125,
+          "y": 416.6,
+          "direction": "right"
+        },
+        "constraintName": "fk_doctor speciality_to_speciality",
+        "visible": true,
+        "id": "6fdadfe3-44f0-4b42-a697-9dc1332b2242"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "35469e45-f078-49d0-824f-87574316a442",
+          "columnIds": [
+            "3b5a02bb-9eb1-43cd-905d-9078341a60e0"
+          ],
+          "x": 1295.68935546875,
+          "y": 259.6,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "699875fd-25fe-406a-a873-a819693efe49",
+          "columnIds": [
+            "292af076-2951-48c2-9647-943473a957df"
+          ],
+          "x": 1321.618603515625,
+          "y": 361,
+          "direction": "top"
+        },
+        "constraintName": "fk_employee_to_doctor speciality",
+        "visible": true,
+        "id": "19b9a10e-59eb-4cb8-b0fb-4520b9c95167"
+      }
+    ]
+  }
+}
