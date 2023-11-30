@@ -26,6 +26,8 @@ body {
 
 .fa:hover {
     opacity: 0.7;
+    background-color: #ded5df;
+    background-color: transparent;
 }
 
 .fa-facebook {
@@ -39,7 +41,6 @@ body {
   left: 30%;
   align-items: center;
   justify-content: center;
-  border: 2px solid #000;
   border-radius: 9999px;
   background-color:  rgb(130, 6, 103);
   padding: 0.5rem 1rem; /* Adjust the padding to make it smaller */
@@ -52,7 +53,6 @@ body {
 
 .playstore-button:hover {
   background-color: transparent;
-  color: rgb(248, 248, 248);
 }
 
 .icon {
@@ -80,13 +80,10 @@ body {
   color: rgb(248, 248, 248);
 }
 
-.button1 {
+.bellbutton {
   width: 50px;
   height: 50px;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,6 +93,9 @@ body {
   transition-duration: .3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
   border: none;
+  position: absolute;
+  top: 86%;
+  left: 48%;
 }
 
 .bell {
@@ -106,35 +106,47 @@ body {
   fill: white;
 }
 
-.button1:hover {
-  background-color: rgb(248, 248, 248);
+.bellbutton:hover {
+  background-color: rgb(243, 233, 233);
+  background-color: transparent;
 }
 
-.button1:hover .bell {
+.bellbutton:hover .bell {
   animation: bellRing 0.9s both;
 }
 
 /* bell ringing animation keyframes*/
 @keyframes bellRing {
-  0%, 100% {
+  0%,
+  100% {
     transform-origin: top;
   }
+
   15% {
     transform: rotateZ(10deg);
   }
+
   30% {
     transform: rotateZ(-10deg);
   }
+
   45% {
     transform: rotateZ(5deg);
   }
+
   60% {
     transform: rotateZ(-5deg);
   }
+
   75% {
     transform: rotateZ(2deg);
   }
 }
+
+.button:active {
+  transform: scale(0.8);
+}
+
 
 
 .button:active {
@@ -180,6 +192,8 @@ a {
 
 #signupbutton:hover {
   outline: 2px solid #9e4caf; 
+  background-color: transparent;
+ 
 }
 
 #settingsbutton {
@@ -198,6 +212,7 @@ a {
 
 #settingsbutton:hover {
   outline: 2px solid #9e4caf; 
+  background-color: transparent;
 }
 
 .flex-flex {
@@ -239,7 +254,6 @@ a {
   padding-bottom: 15px;
   text-align: center;
 }
-
 
 .flex-justifyContent--center {
   -ms-flex-pack: center;
@@ -295,7 +309,37 @@ input[type="submit"] {
 
 #input:hover {
   outline: 2px solid #f5f5f5; 
+  background-color: transparent;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  z-index: 1;
+}
 
+.popup-content {
+  text-align: center;
+}
 
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#registrationForm {
+  text-align: center;
+}
+
+#registrationForm h2 {
+  margin-bottom: 20px;
+}

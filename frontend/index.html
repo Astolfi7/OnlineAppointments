@@ -5,12 +5,33 @@
   <title>Appointment Online</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
 <div class="loginbackground box-background--white padding-top--64">
-  <signup id="signupbutton">Login</signup>
+  <signup id="signupbutton" onclick="openPopup()" >Login</signup>
+  <div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <!-- Your registration form goes here -->
+        <form id="registrationForm">
+            <h2>Registration</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</div>
   <settings id="settingsbutton">Ustawienia</settings>
+ 
   
   <div class="loginbackground-gridContainer">
   </div>
@@ -52,7 +73,7 @@
       <span class="text-2">Google Play</span>
     </span>
   </a>
-  <button class="button1">
+  <button class="bellbutton">
     <svg viewBox="0 0 448 512" class="bell"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
 </button>
 <a href="https://www.facebook.com" class="fa fa-facebook"></a>
