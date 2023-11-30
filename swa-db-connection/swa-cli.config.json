@@ -1,0 +1,15 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "sweng": {
+      "appLocation": "Desktop\\Inżynierka\\frontend",
+      "outputLocation": ".",
+      "dataApiLocation": "Desktop\\swa-db-connection"
+    },
+    "configuration": {
+      "appLocation": "Desktop\\Inżynierka\\frontend",
+      "outputLocation": ".",
+      "dataApiLocation": "Desktop\\swa-db-connection"
+    }
+  }
+}
