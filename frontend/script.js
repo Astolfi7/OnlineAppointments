@@ -24,7 +24,7 @@ function toggleDropdown() {
   
   function clearDefaultText() {
     var searchBar = document.getElementById("searchBar");
-    if (searchBar.value === "Search...") {
+    if (searchBar.value === "Nazwisko lub specjalizacja...") {
       searchBar.value = "";
     }
   }
@@ -32,6 +32,6 @@ function toggleDropdown() {
   function restoreDefaultText() {
     var searchBar = document.getElementById("searchBar");
     if (searchBar.value === "") {
-      searchBar.value = "Search...";
+      searchBar.value = "Nazwisko lub specjalizacja...";
     }
   }
