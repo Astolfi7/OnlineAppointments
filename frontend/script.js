@@ -22,3 +22,16 @@ function toggleDropdown() {
     }
   };
   
+  function clearDefaultText() {
+    var searchBar = document.getElementById("searchBar");
+    if (searchBar.value === "Search...") {
+      searchBar.value = "";
+    }
+  }
+  
+  function restoreDefaultText() {
+    var searchBar = document.getElementById("searchBar");
+    if (searchBar.value === "") {
+      searchBar.value = "Search...";
+    }
+  }

@@ -14,7 +14,7 @@ body {
 .fa {
   padding: 20px;
   position: absolute;
-  top: 85%;
+  top: 88%;
   left: 57%;
   font-size: 30px;
   width: 100px;
@@ -37,7 +37,7 @@ body {
 .playstore-button {
   display: inline-flex;
   position: absolute;
-  top: 85%;
+  top: 88%;
   left: 30%;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,7 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
   border: none;
   position: absolute;
-  top: 86%;
+  top: 89%;
   left: 48%;
 }
 
@@ -159,7 +159,7 @@ body {
 
 h1 {
     letter-spacing: -1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 a {
   color: #762582;
@@ -248,6 +248,7 @@ a {
   max-width: 448px;
   background: rgb(255, 255, 255);
   box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  background: transparent;
 }
 span {
   display: block;

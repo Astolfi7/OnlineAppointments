@@ -54,11 +54,14 @@
         <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
-              <span class="padding-bottom--15">Znajdź swojego lekarza:</span>
+              <span class="padding-bottom--15">E-Wizyty</span>
               <span class="padding-bottom--15" id="safePassoword">&nbsp;</span>
               <form id="stripe-login">
                 <div class="field padding-bottom--24">
-                  <input type="text" id="username" name="username">
+                  <input type="text" id="searchBar" value="Nazwisko lub specjalizacja..." onfocus="clearDefaultText()" onblur="restoreDefaultText()">
+                  <div class="field padding-bottom--15">
+                    
+                  </div>
                   <input type="submit" name="submit" value="Szukaj" id="submitButton">
                 </div>
               </form>
