@@ -35,3 +35,4 @@ function toggleDropdown() {
       searchBar.value = "Nazwisko lub specjalizacja...";
     }
   }
+

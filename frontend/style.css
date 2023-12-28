@@ -186,9 +186,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  outline: none; 
-  font-weight: bold;
-  border-radius: 10%;
+  
 }
 
 #signupbutton:hover {
@@ -355,7 +353,6 @@ li a {
 }
 
 /* Style the dropdown button and container */
-/* Style the dropdown button and container */
 .dropdown {
   position: absolute;
   top: 0;
@@ -405,4 +402,9 @@ li a {
   outline: 2px solid #9e4caf; 
   background-color: transparent;
 }
+
+
+
+
+
 
