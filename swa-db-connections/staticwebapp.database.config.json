@@ -30,7 +30,15 @@
     }
   },
   "entities": {
-    
+    "Doctor":{
+      "source":"dbo.Employee",
+      "permissions": [
+        {
+          "actions":["read"],
+          "role":"anonymous"
+        }
+      ]
+    }
   }
 
 }
